@@ -8,12 +8,23 @@
 </head>
 <body>
 
-	<% if current_user %>
- 		YOU ARE LOGGED IN AS <%= current_user.name %>
- 		<%= link_to "Log Out", logout_path %>
- 	<% else %>
- 		<%= link_to "Log in", login_path%>
- 	<% end %>
+<div class="navigation">
+	
+	<nav>
+		<% if current_user %>
+			<ul>
+				<li><%= link_to "Gallery", images_path %></li>
+				<li><%= link_to "Albums", albums_path %></li>
+		 		<li>Welcome,  <%= current_user.name%></li>
+		 		<li><%= link_to "Log Out", logout_path %></li>
+			</ul>
+					
+		<% else %>
+		 	<%= link_to "Already signed up? Log in here", login_path%>
+		<% end %>
+	 </nav>
+</div>
+
 
 <%= yield %>
 

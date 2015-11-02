@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   
-  get '/' => 'users#new' #main page will shown new users
+  get '/' => 'users#new' #main page will show new users
 
   get '/users/:id' => 'users#show'
 
