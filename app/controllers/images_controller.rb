@@ -10,15 +10,21 @@ class ImagesController < ApplicationController
   # GET /images/1
   # GET /images/1.json
   def show
+    if @image.album_id #if image has album id, it will do the following line
+      @album = Album.find(@image.album_id) # goes to the album table and looks for the album with id == @image.album_id
+    end
   end
+  #find album which has the image, album id
 
   # GET /images/new
   def new
     @image = Image.new
+    @albums = Album.all
   end
 
   # GET /images/1/edit
   def edit
+    @albums = Album.all
   end
 
   # POST /images

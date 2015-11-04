@@ -1,33 +1,33 @@
-<p id="notice"><%= notice %></p>
+<p id="notice"><%= notice %></p><br>
 
 
-<h1>Your Images</h1>
+<h1>Images</h1><br>
+
+  <%= link_to 'Add to your Gallery!', new_image_path %> <br>
+
+    <br><% @images.each do |image| %>
+      <div class="photo">
+            
+         <%= link_to image_tag(image.image), image %><!-- change URL display from text to image -->
+         <p><%= image.name %></p>
+         <p><%= link_to 'Delete', image, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+         
+         
+      </div>
 
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Image</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  
-  <tbody>
-    <% @images.each do |image| %>
-      <tr>
-        <td><%= image.name %></td>  
-        <td><%= image_tag(image.image) %></td>  <!-- change URL display from text to image -->
-        <td><%= link_to 'Show', image %></td>
-        <td><%= link_to 'Edit', edit_image_path(image) %></td>
-        <td><%= link_to 'Destroy', image, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
     <% end %>
-  </tbody>
-</table>
 
 
-<br>
+      <script>
+      
+      	$("button").on("click", function() {
+    		
+  		});
+		
+	  </script>
 
-<%= link_to 'New Image', new_image_path %>
+
+<br><br>
+
+

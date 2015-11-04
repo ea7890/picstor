@@ -1,0 +1,21 @@
+/*// Place all the styles related to the images controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/*/
+
+.photo {
+
+	display: inline-block;
+	width: auto;
+	height: auto;
+	vertical-align: top;
+	padding: 5px;
+	text-align: center;
+}
+
+.showImage {
+	
+}
+
+.actions{
+	margin-top: 20px;
+}

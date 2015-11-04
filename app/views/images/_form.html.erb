@@ -19,6 +19,12 @@
     <%= f.label :image %><br>
     <%= f.text_field :image %>
   </div>
+
+  <div class="field">
+    <%= f.label :album_id %><br>
+    <%= select_tag "image[album_id]", options_from_collection_for_select(@albums, "id", "name"), include_blank: true %>
+  </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>

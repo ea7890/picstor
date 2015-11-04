@@ -1,14 +1,46 @@
 <p id="notice"><%= notice %></p>
 
+<br>
+
 <p>
-  <strong>Name:</strong>
+  
   <%= @image.name %>
 </p>
+<br>
 
+<div class="showImage">
 <p>
-  <strong>Image:</strong>
   <%= image_tag(@image.image) %> <!-- changes images display from text to actual image -->
 </p>
+</div>
+
+<% if @album %>
+	<p><%= @album.name %></p> 
+<% end %>
+<!-- shows us the name of the album where the image is -->
+
+
 
 <%= link_to 'Edit', edit_image_path(@image) %> |
-<%= link_to 'Back', images_path %>
+
+<%= link_to 'Back', images_path %> 
+
+<br>
+
+<button>Like</button>
+         
+         <form method='post'>
+
+         	Comment:<br />
+
+				  <textarea name='comment' id='comment'></textarea><br />
+
+				  
+
+				  <input type='submit' value='Submit' />  
+         </form>
+
+
+
+
+

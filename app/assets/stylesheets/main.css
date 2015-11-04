@@ -1,9 +1,38 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+
+
+} /*should have this for most projects*/
+
+body {
+	background-image: url("http://www.techprevue.com/wp-content/uploads/2015/02/best-digital-camera-1024x608.png");
+	background-size: cover;
+	background-position: fixed;
+	
+}
+
 .navigation li {
 
 	display: inline;
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	color: white;
 	
 }
 
+.navigation {
+
+	height: 25px;
+	background-color: black;
+
+}
+
+nav a {
+
+	text-decoration: none;
+	color: cyan;
+} /*changes the color of the words in the nav bar*/

@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
 
 		if user && user.authenticate(params[:password])
 			session[:user_id] = user.id
-			redirect_to albums_path # when you log in, it sends you to your personal page
+			redirect_to images_path # when you log in, it sends you to your personal page
 		else
 			redirect_to login_path
 		end

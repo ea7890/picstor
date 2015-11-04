@@ -5,6 +5,14 @@
   <%= @album.name %>
 </p>
 
+  <% @images.each do |image| %>
+      
+    <% if image.album_id == @album.id %>
+    	<div class="image_in_album"><%= image_tag(image.image) %></div>
+    <% end %>
+      
+  <% end %>
+
 
 
 <%= link_to 'Edit', edit_album_path(@album) %> |
