@@ -10,9 +10,12 @@
 body {
 	background-image: url("http://www.techprevue.com/wp-content/uploads/2015/02/best-digital-camera-1024x608.png");
 	background-size: cover;
-	background-position: fixed;
-	
+	background-attachment: fixed;
+
 }
+
+
+
 
 .navigation li {
 
@@ -35,4 +38,8 @@ nav a {
 
 	text-decoration: none;
 	color: cyan;
+
 } /*changes the color of the words in the nav bar*/
+
+
+
