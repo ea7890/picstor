@@ -11,16 +11,33 @@ body {
 .photo {
 
 	display: inline-block;
-	width: auto;
-	height: auto;
+	/*width: auto;
+	height: auto;*/
 	vertical-align: top;
 	padding: 10px;
 	text-align: center;
-		
+	
 }
 
+.photo img {
+	border-radius: 15px;
+	width: auto;
+	height: auto;
+
+}
 
 .actions{
 	margin-top: 20px;
+}
+
+
+
+.photo p a: {
+color: rgba(30, 114, 199, 0.4);
+
+}
+
+p a:visited {
+	color: rgba(30, 114, 199, 0.4);
 }
 

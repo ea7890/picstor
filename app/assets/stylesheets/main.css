@@ -7,6 +7,8 @@
 
 } /*should have this for most projects*/
 
+
+
 body {
 	background-image: url("http://www.techprevue.com/wp-content/uploads/2015/02/best-digital-camera-1024x608.png");
 	background-size: cover;
@@ -21,7 +23,7 @@ body {
 
 	display: inline;
 	list-style: none;
-	margin: 0;
+	margin: 50px; /*spaces out the navbar content*/
 	padding: 0;
 	color: white;
 	
@@ -37,7 +39,7 @@ body {
 nav a {
 
 	text-decoration: none;
-	color: cyan;
+	color: rgba(30, 217, 210, 0.7);
 
 } /*changes the color of the words in the nav bar*/
 

@@ -8,9 +8,9 @@
       
         
         <%= album.name %>
-        <%= link_to 'Show', album %>
-        <%= link_to 'Edit', edit_album_path(album) %>
-        <%= link_to 'Delete', album, method: :delete, data: { confirm: 'Are you sure?' } %>
+        <p><%= link_to 'Show', album %></p>
+        <p><%= link_to 'Edit', edit_album_path(album) %></p>
+        <p><%= link_to 'Delete', album, method: :delete, data: { confirm: 'Are you sure?' } %></p>
 
     </div>
       
@@ -18,7 +18,7 @@
 
 <br>
 
-<%= link_to 'Create an Album', new_album_path %>
+<p><%= link_to 'Create an Album', new_album_path %></p>
 
 
 

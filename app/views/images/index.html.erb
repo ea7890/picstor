@@ -3,9 +3,10 @@
 
 <h1>Images</h1><br>
 
-  <%= link_to 'Add to your Gallery!', new_image_path %> <br>
+  <p><%= link_to 'Add to your Gallery!', new_image_path %></p> <br>
 
     <br><% @images.each do |image| %>
+      
       <div class="photo">
             
          <%= link_to image_tag(image.image), image %><!-- change URL display from text to image -->
