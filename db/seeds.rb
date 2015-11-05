@@ -6,6 +6,6 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-summer = Album.where(name: "Summer").first_or_create
-weekend = Album.where(name: "Weekend").first_or_create
+summer = Album.where(name: "Summer", is_private: true).first_or_create
+weekend = Album.where(name: "Weekend", is_private: false).first_or_create
 
